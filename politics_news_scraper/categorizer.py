@@ -66,17 +66,17 @@ class DynamicCategorizer:
         
         prompt = f"""You are analyzing recent politics-related news articles. Based on the following articles, {num_categories_prompt} that best organize these articles.
 
-Articles:
-{articles_text}
+            Articles:
+            {articles_text}
 
-Please:
-1. Identify the main themes and topics
-2. Create clear, SPECIFIC category names (e.g., "Trump Tariffs", "Decreasing Housing Cost", "SNAP Payments")
-3. It is encouraged to include relevant names of people, organizations, or policies, but make sure to be specific.
-4. Return ONLY a JSON array of category names, nothing else
+            Please:
+            1. Identify the main themes and topics
+            2. Create clear, SPECIFIC category names (e.g., "Trump Tariffs", "Decreasing Housing Cost", "SNAP Payments")
+            3. It is encouraged to include relevant names of people, organizations, or policies, but make sure to be specific.
+            4. Return ONLY a JSON array of category names, nothing else
 
-Example format: ["Category 1", "Category 2", "Category 3"]
-"""
+            Example format: ["Category 1", "Category 2", "Category 3"]
+            """
         
         messages = [
             {"role": "system", "content": "You are a helpful assistant that analyzes news articles and creates logical categories. Always respond with valid JSON arrays."},
@@ -130,15 +130,15 @@ Example format: ["Category 1", "Category 2", "Category 3"]
             
             prompt = f"""You are categorizing politics news articles. For each article below, assign it to ONE of these categories:
 
-Categories: {', '.join(categories)}
+                Categories: {', '.join(categories)}
 
-Articles:
-{articles_text}
+                Articles:
+                {articles_text}
 
-For each article, return a JSON object mapping article numbers to category names.
-Example format: {{"1": "Category Name", "2": "Category Name", ...}}
+                For each article, return a JSON object mapping article numbers to category names.
+                Example format: {{"1": "Category Name", "2": "Category Name", ...}}
 
-Return ONLY the JSON object, nothing else."""
+                Return ONLY the JSON object, nothing else."""
             
             messages = [
                 {"role": "system", "content": "You are a helpful assistant that categorizes news articles. Always respond with valid JSON objects."},

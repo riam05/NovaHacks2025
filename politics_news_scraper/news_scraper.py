@@ -34,11 +34,10 @@ class NewsScraper:
         
         articles = []
         
-        # Try different endpoints and queries
+        # Try different search queries for the /everything endpoint
         queries = [
             {"q": "politics", "language": "en"},
             {"q": "political", "language": "en"},
-            {"category": "politics", "language": "en"},
         ]
         
         for query_params in queries:

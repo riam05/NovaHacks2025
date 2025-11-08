@@ -75,16 +75,21 @@ Frontend will run on `http://localhost:3000`
 
 ```
 NovaHacks2025/
-├── app.py                 # FastAPI backend API
-├── search.py             # Original search script
-├── requirements.txt      # Python dependencies
-├── .env                  # Environment variables (create this)
-├── results/              # Saved analysis results
-└── frontend/             # React frontend
+├── app.py                      # FastAPI backend API
+├── search.py                   # Debate analysis logic
+├── requirements.txt            # Python dependencies
+├── .env                        # Environment variables (create this)
+├── results/                    # Saved analysis results
+├── politics_news_scraper/      # News scraping & categorization
+│   ├── news_scraper.py         # Fetches news from News API
+│   ├── categorizer.py          # AI topic categorization
+│   └── config.py               # Configuration
+└── frontend/                   # React frontend
     ├── src/
-    │   ├── App.tsx       # Main landing page component
-    │   └── index.css     # Tailwind CSS
-    └── package.json      # Node dependencies
+    │   ├── App.tsx             # Main component
+    │   └── index.css           # Tailwind CSS
+    ├── tailwind.config.js      # Tailwind config
+    └── package.json            # Node dependencies
 ```
 
 ## API Endpoints
