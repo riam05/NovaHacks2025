@@ -1,0 +1,26 @@
+{
+  "id": "gen-1762626597-8TV4EVVKMJvOIkPr6cMx",
+  "provider": "Perplexity",
+  "model": "perplexity/sonar-pro-search",
+  "object": "chat.completion",
+  "created": 1762626597,
+  "choices": [
+    {
+      "logprobs": null,
+      "finish_reason": "stop",
+      "native_finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"topic\": \"The current U.S. government shutdown debate\",\n  \"sides\": [    {\n      \"id\": \"A\",\n      \"label\": \"liberal\",\n      \"arguments\": [        \"Republicans are using the threat of a government shutdown as a political weapon to force extreme spending cuts and policy changes that do not reflect the will of the majority.\",\n        \"A shutdown would harm millions of Americans, including federal workers, military personnel, and those who rely on government services, all for partisan gain.\",\n        \"Democrats have already made significant compromises on spending, but conservatives continue to demand more, including controversial measures on immigration and social programs.\",\n        \"The refusal to pass a clean funding bill is irresponsible and undermines the stability of government operations.\",\n        \"Conservative demands, such as deep cuts to social safety nets and border security measures, are unrelated to basic government funding and should be debated separately.\"\n      ],\n      \"sources\": [        \"https://www.nytimes.com/2025/11/06/us/politics/government-shutdown-congress.html\",\n        \"https://www.cnn.com/2025/11/07/politics/government-shutdown-debate/index.html\"\n      ]\n    },\n    {\n      \"id\": \"B\",\n      \"label\": \"conservative\",\n      \"arguments\": [        \"Democrats are refusing to address out-of-control government spending, which is driving up the national debt and inflation.\",\n        \"A shutdown is necessary leverage to force meaningful fiscal reforms and rein in wasteful programs.\",\n        \"Republicans are demanding stronger border security and immigration enforcement as part of any funding deal, reflecting the priorities of their constituents.\",\n        \"Democrats are unwilling to negotiate on key issues, instead pushing for a 'blank check' to continue reckless spending.\",\n        \"The current crisis is the result of Democratic leadership failing to pass individual appropriations bills on time, instead relying on last-minute omnibus packages.\"\n      ],\n      \"sources\": [        \"https://www.foxnews.com/politics/government-shutdown-2025-republican-demands\",\n        \"https://www.nationalreview.com/2025/11/the-shutdown-showdown-why-republicans-are-right/\"\n      ]\n    }\n  ]\n}",
+        "refusal": null,
+        "reasoning": null
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 477,
+    "total_tokens": 663
+  }
+}
