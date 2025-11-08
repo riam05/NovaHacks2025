@@ -34,7 +34,7 @@ def generate_args(topic):
             }}
         ]
         }}
-        Make sure all arguments are concise and supported by citations.
+        Make sure all arguments are concise and supported by citations from RECENT sources.
         """
     
     payload = {
@@ -47,19 +47,19 @@ def generate_args(topic):
     
     return headers, payload
 
-topic = "The current U.S. government shutdown debate"
-headers, payload = generate_args(topic)
+# topic = "The current U.S. government shutdown debate"
+# headers, payload = generate_args(topic)
 
-response = requests.post(
-    "https://openrouter.ai/api/v1/chat/completions",
-    headers=headers,
-    data=json.dumps(payload)
-)
+# response = requests.post(
+#     "https://openrouter.ai/api/v1/chat/completions",
+#     headers=headers,
+#     data=json.dumps(payload)
+# )
 
-data = response.json()
+# data = response.json()
 
-os.makedirs("results", exist_ok=True)
-output_path = os.path.join("results", "government_shutdown.json")
+# os.makedirs("results", exist_ok=True)
+# output_path = os.path.join("results", "government_shutdown.json")
 
-with open(output_path, "w") as f:
-    json.dump(data, f, indent=2)
+# with open(output_path, "w") as f:
+#     json.dump(data, f, indent=2)
